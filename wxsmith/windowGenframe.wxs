@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="windowGenFrame">
+		<title>windowGen</title>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel" member="yes">
+					<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticTextSize" member="yes">
+										<label>Size</label>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="SpinCtrlCount" member="yes">
+										<value>0</value>
+										<max>100000</max>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticTextWindow" member="yes">
+										<label>Window</label>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE1" variable="ChoiceWindow" member="yes">
+										<content>
+											<item>Rectangular</item>
+											<item>Hamming</item>
+											<item>Hann</item>
+											<item>Bartlett</item>
+											<item>Bartlett-Hann</item>
+											<item>Blackman</item>
+											<item>Nuttall</item>
+											<item>Blackman-Harris</item>
+											<item>Blackman-Nuttall</item>
+											<item>Flat top</item>
+										</content>
+										<selection>0</selection>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<option>2</option>
+								</object>
+							</object>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxFilePickerCtrl" name="ID_FILEPICKERCTRL1" variable="FilePickerCtrl" member="yes">
+								<message></message>
+								<wildcard>*.h</wildcard>
+								<style>wxFLP_SAVE|wxFLP_USE_TEXTCTRL</style>
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxButton" name="ID_BUTTON1" variable="ButtonSave" member="yes">
+								<label>Save</label>
+								<handler function="OnButtonSaveClick" entry="EVT_BUTTON" />
+							</object>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>
